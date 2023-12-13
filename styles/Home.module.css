@@ -1,0 +1,25 @@
+.pokemon_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  font-size: 1.5rem;
+  margin-left:15px;
+}
+
+.page_title {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .pokemon_list {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pokemon_list {
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+  }
+}
