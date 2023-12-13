@@ -4,7 +4,6 @@ import client from "../../apollo-client";
 import Head from "next/head";
 import Link from "next/link"; // Importa Link de Next.js
 import styles from '../../styles/Pokemon.module.css';
-import Image from "next/image";
 
 export default function Pokemon({ pokemon, sprite }) {
   console.log(pokemon, sprite);
@@ -16,7 +15,7 @@ export default function Pokemon({ pokemon, sprite }) {
       </Head>
       <section className={styles.section}>
         <h1>{pokemon.name} - ID: {pokemon.id}</h1>
-        <Image width={200} height={200} className={styles.pokemon_image} src={sprite} alt={pokemon.name} />
+        <img className={styles.pokemon_image} src={sprite} alt={pokemon.name} />
 
         <h2>Types</h2>
         <ul>
