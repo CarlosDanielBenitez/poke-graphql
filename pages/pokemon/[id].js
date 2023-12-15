@@ -2,11 +2,11 @@
 import { gql } from "@apollo/client";
 import client from "../../apollo-client";
 import Head from "next/head";
-import Link from "next/link"; // Importa Link de Next.js
+import Link from "next/link"; 
 import styles from '../../styles/Pokemon.module.css';
 
 export default function Pokemon({ pokemon, sprite }) {
-  console.log(pokemon, sprite);
+
   
   return (
     <>
