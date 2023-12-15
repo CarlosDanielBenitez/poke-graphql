@@ -2,11 +2,12 @@
 import { gql } from "@apollo/client";
 import client from "../../apollo-client";
 import Head from "next/head";
-import Link from "next/link"; 
+import Link from "next/link"; // 
 import styles from '../../styles/Pokemon.module.css';
+import Image from "next/image";
 
 export default function Pokemon({ pokemon, sprite }) {
-
+  console.log(pokemon, sprite);
   
   return (
     <>
@@ -15,7 +16,18 @@ export default function Pokemon({ pokemon, sprite }) {
       </Head>
       <section className={styles.section}>
         <h1>{pokemon.name} - ID: {pokemon.id}</h1>
-        <img className={styles.pokemon_image} src={sprite} alt={pokemon.name} />
+
+
+
+
+<Image
+  className={styles.pokemon_image}
+  src={sprite}
+  alt={pokemon.name}
+  width={200}
+  height={200}
+/>
+
 
         <h2>Types</h2>
         <ul>

@@ -12,6 +12,7 @@
     "@apollo/client": "^3.4.16",
     "graphql": "^15.6.1",
     "next": "^14.0.4",
+    "next-images": "^1.8.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
